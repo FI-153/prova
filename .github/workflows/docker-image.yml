@@ -15,4 +15,8 @@ jobs:
     steps:
     - name: Build and push Docker images
       uses: docker/build-push-action@v5.1.0
+      with:
+        # List of output destinations (format: type=local,dest=path)
+        outputs: type='local',dest=./
+
           
