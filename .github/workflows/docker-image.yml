@@ -12,7 +12,7 @@ name: Build & Publish Docker Image
 on:
   push:
     branches:
-      - main
+      - production
 
 jobs:
   push_to_registry:
@@ -34,4 +34,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: freddy153/test-build-deploy:latest
+          tags: freddy153/test-build-deploy:latest-production
