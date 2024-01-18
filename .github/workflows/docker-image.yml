@@ -34,4 +34,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: freddy153/test-build-deploy:production
+          tags: freddy153/test-build-deploy:latest-production
