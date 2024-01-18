@@ -40,5 +40,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: latest
+          tags: freddy153/test-build-deploy:latest
           labels: ${{ steps.meta.outputs.labels }}
