@@ -1,4 +1,4 @@
-name: Dev - Build & Publish Docker Image
+name: Dev - Build & Publish App2
 
 on:
   push:
@@ -14,8 +14,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./app1/Dockerfile
-            image: freddy153/test-build-deploy
           - dockerfile: ./app2/Dockerfile
             image: freddy153/test-build-deploy2
     permissions:
