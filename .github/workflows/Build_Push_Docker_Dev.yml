@@ -34,7 +34,7 @@ jobs:
         with:
           images: ${{ matrix.image }}
           tags:
-            type=latest-development
+            latest-development
 
    
       - name: Build and push Docker images
